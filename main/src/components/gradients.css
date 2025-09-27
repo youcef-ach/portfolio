@@ -1,0 +1,46 @@
+.gradient {
+  position: absolute;
+  z-index: 0;
+  height: 700px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  filter: blur(200px);
+}
+
+.gradient1 {
+  background-color: #ff28d5;
+  top: -100px;
+  right: 300px;
+  animation: wander-left 10s ease-in-out infinite;
+}
+
+.gradient2 {
+  top: 100px;
+  left: 300px;
+  background-color: #1c34ff;
+  animation: wander-right 12s ease-in-out infinite;
+}
+
+@keyframes wander-left {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-20vw) translateY(50vh);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes wander-right {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(30vw) translateY(-50vh);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}

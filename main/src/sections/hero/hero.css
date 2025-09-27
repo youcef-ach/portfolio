@@ -1,0 +1,39 @@
+.heroContainer {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.hey {
+  font-weight: 700 !important;
+  font-size: 23px !important;
+  line-height: 120% !important;
+  letter-spacing: 0% !important;
+}
+
+.fullName {
+  font-weight: 900 !important;
+  font-size: 128px !important;
+  letter-spacing: 0% !important;
+  line-height: 100% !important;
+}
+
+.explore {
+  font-weight: 700 !important;
+  font-style: Bold !important;
+  font-size: 23px !important;
+  line-height: 100% !important;
+  letter-spacing: 0% !important;
+}
+
+.bottomFlex {
+  position: absolute;
+  bottom: 80px;
+  z-index: 20;
+}
+
+.topFlex {
+  position: absolute;
+  top: 150px;
+  z-index: 10;
+}

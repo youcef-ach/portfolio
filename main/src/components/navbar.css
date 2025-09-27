@@ -1,0 +1,65 @@
+.ant-menu {
+  background-color: transparent;
+  justify-content: end;
+  align-items: center;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 25px;
+  left: 0;
+  right: 0;
+  padding-inline: 106px;
+  z-index: 100;
+}
+
+.headerMenu {
+  height: 28px;
+  border: none !important;
+  outline: none !important;
+  flex-shrink: 1;
+  min-width: 55px;
+}
+
+.headerMenu li::after {
+  bottom: 17px !important;
+}
+
+.header span {
+  font-weight: 700;
+  font-size: 23px !important;
+  line-height: 100%;
+  color: white;
+}
+
+.textGradient,
+.headerMenu li a {
+  background-image: linear-gradient(to bottom, #fff 43.1%, #34323d);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent !important;
+}
+
+.headerLogoContainer {
+  height: 48px;
+  width: 48px;
+  flex-shrink: 0;
+}
+
+.headerLogo {
+  height: 100%;
+  width: 100%;
+}
+
+.headerShadow {
+  height: 130px;
+  position: fixed;
+  top: 0px;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  background-image: linear-gradient(to bottom, #0b0620, transparent);
+}
