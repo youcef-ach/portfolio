@@ -14,28 +14,27 @@ function hero() {
       justify="space-between"
       align="center"
     >
-      <Gradients />
+      <div className="heroBottomShadow"></div>
+      <Gradients class0="gradient" class1="gradient1" class2="gradient2" />
       <div className="topFlex globalRL">
-        <Text className="noMP hey">
-          👋 Hey, I&apos;m Here
-        </Text>
-        <Title className="noMP fullName">ACHOURI YOUCEF ISLEM</Title>
+        <Text className="noMP header2">👋 Hey, I&apos;m Here</Text>
+        <Title className="noMP header1">ACHOURI YOUCEF ISLEM</Title>
       </div>
       <Flex className="bottomFlex globalRL" justify="space-between" align="end">
         <div style={{ textAlign: "center" }}>
           <Text
-            className="explore"
+            className="text"
             style={{ paddingBottom: 19, display: "block" }}
           >
             Explore
           </Text>
           <p>
-            <DownOutlined className="explore" />
+            <DownOutlined className="text" />
           </p>
         </div>
         <div style={{ textAlign: "right" }}>
           <img src={shape} />
-          <Title className="fullName noMP">DEVELOPER</Title>
+          <Title className="header1 noMP">DEVELOPER</Title>
         </div>
       </Flex>
     </Flex>

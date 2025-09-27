@@ -1,4 +1,35 @@
-.about {
-    height: 700px;
-    border: 1px solid red;
+.name {
+  font-weight: 500 !important;
+  font-size: 45px !important;
+  line-height: 100% !important;
+  letter-spacing: 0% !important;
+  color: #598eff !important;
+}
+
+.card1 {
+  flex-basis: 0;
+  flex-grow: 1.4;
+  flex-shrink: 1;
+  min-width: 450px;
+}
+
+.card2 {
+  flex-basis: 0;
+  flex-grow: 1;
+  flex-shrink: 1;
+  min-width: 322px;
+}
+
+.card3 {
+    flex-basis: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+    min-width: 322px;
+}
+
+.card5 {
+  flex-basis: 0;
+  flex-grow: 1;
+  flex-shrink: 1;
+  min-width: 322px;
 }

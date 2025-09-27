@@ -1,12 +1,12 @@
-import './gradients.css'
+import "./gradients.css";
 
-function gradients() {
+function gradients({ class1, class2, class0 }) {
   return (
     <>
-    <div className="gradient gradient1"></div>
-    <div className="gradient gradient2"></div>
+      <div className={`${class0} ${class1}`}></div>
+      <div className={`${class0} ${class2}`}></div>
     </>
-  )
+  );
 }
 
-export default gradients
+export default gradients;

@@ -1,9 +1,9 @@
-import { ConfigProvider, Layout, theme,Flex } from "antd";
+import { ConfigProvider, Layout, theme, Flex } from "antd";
 import { useState } from "react";
 import Navbar from "./components/Navbar";
 import Hero from "./sections/hero/hero";
 import About from "./sections/about/About";
-import './index.css'
+import "./index.css";
 
 const { Content } = Layout;
 
@@ -17,7 +17,7 @@ function App() {
         token: {
           colorBgBase: dark ? "#0B0620" : "#fff",
           colorTextBase: "#fff",
-          colorPrimary: "#fff",
+          colorPrimary: "#598EFF",
         },
         components: {
           Layout: {
@@ -29,7 +29,12 @@ function App() {
       <Layout>
         <Navbar />
         <Content>
-          <Flex vertical justify="center" align="center" className="fullW globalFlexContainer">
+          <Flex
+            vertical
+            justify="center"
+            align="center"
+            className="fullW globalFlexContainer"
+          >
             <Hero />
             <About />
           </Flex>

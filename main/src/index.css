@@ -7,6 +7,7 @@
 body {
   min-height: 100vh;
   background: #0b0620;
+  overflow-x: hidden;
 }
 
 .fullW {
@@ -22,65 +23,167 @@ body {
   padding-inline: 106px;
 }
 
+.sectionPadding {
+  padding-block: 100px;
+}
+
 .globalRL {
   left: 106px;
   right: 106px;
 }
 
-/* @media (max-width: 1288px) {
-  .heroContainer {
-    padding: 150px 80px 20px 80px;
+.header1 {
+  font-weight: 900 !important;
+  font-size: 128px !important;
+  letter-spacing: 0% !important;
+  line-height: 100% !important;
+}
+
+.subHeader1 {
+  font-weight: 700 !important;
+  font-size: 64px !important;
+  line-height: 100% !important;
+  letter-spacing: 0% !important;
+}
+
+.header2 {
+  font-weight: 700 !important;
+  font-size: 23px !important;
+  line-height: 120% !important;
+  letter-spacing: 0% !important;
+}
+
+.subHEader2 {
+  font-weight: 500 !important;
+  font-size: 32px !important;
+  line-height: 100% !important;
+  letter-spacing: 0px !important;
+}
+
+.text {
+  font-weight: 700 !important;
+  font-style: Bold !important;
+  font-size: 23px !important;
+  line-height: 100% !important;
+  letter-spacing: 0% !important;
+}
+
+.divider .dLine {
+  width: 150px;
+  height: 2px;
+  background-color: #fff;
+}
+
+.divider span {
+  font-weight: 500 !important;
+  font-size: 64px !important;
+  line-height: 100% !important;
+  letter-spacing: 0% !important;
+  text-align: center !important;
+}
+
+.divider {
+  min-width: 242px;
+}
+
+.darkGrayBg {
+  background-color: #17151f;
+}
+
+.cardRadius {
+  border-radius: 20px;
+  padding: 30px;
+}
+
+.cardText {
+  font-weight: 400 !important;
+  font-size: 23px !important;
+  line-height: 100% !important;
+  letter-spacing: 0% !important;
+}
+
+.cardTitle {
+  font-weight: 700 !important;
+  font-size: 32px !important;
+  line-height: 100% !important;
+  letter-spacing: 0% !important;
+}
+
+.sMediaImg {
+  height: 47px;
+  width: 47px;
+}
+
+@media (max-width: 1288px) {
+  .globalPadding {
+    padding-inline: 80px;
   }
-  .bottomFlex {
+  .globalRL {
     left: 80px;
     right: 80px;
   }
-  .header {
-    padding-inline: 80px;
-  }
 }
+
 @media (max-width: 1168px) {
-  .heroContainer {
-    padding: 150px 40px 20px 40px;
-  }
-  .bottomFlex {
-    left: 40px;
-    right: 40px;
-  }
-  .header {
-    padding-inline: 40px;
-  }
-  .fullName {
+  .header1 {
     font-weight: 800 !important;
     font-size: 90px !important;
   }
-  .hey {
+  .header2 {
     font-size: 32px !important;
   }
-  .explore {
+  .text {
     font-size: 24px !important;
+  }
+  .subHeader1 {
+    font-size: 40px !important;
+    font-weight: 600 !important;
+  }
+  .subHEader2 {
+    font-size: 24px !important;
+    font-weight: 400 !important;
   }
 }
 
 @media (max-width: 768px) {
-  .heroContainer {
-    padding: 150px 10px 20px 10px;
+  .globalPadding {
+    padding-inline: 25px;
   }
-  .bottomFlex {
-    left: 10px;
-    right: 10px;
+  .globalRL {
+    left: 25px;
+    right: 25px;
   }
-  .header {
-    padding-inline: 10px;
-  }
-  .fullName {
+  .header1 {
     font-weight: 700 !important;
     font-size: 48px !important;
   }
-  .hey {
+  .header2 {
     font-size: 16px !important;
   }
-  .explore {
+  .text {
     font-size: 12px !important;
   }
-} */
+  .divider {
+    display: none;
+  }
+}
+
+@media (max-width: 476px) {
+  .globalPadding {
+    padding-inline: 15px;
+  }
+  .globalRL {
+    left: 15px;
+    right: 15px;
+  }
+  .header1 {
+    font-weight: 600 !important;
+    font-size: 36px !important;
+  }
+  .header2 {
+    font-size: 12px !important;
+  }
+  .text {
+    font-size: 12px !important;
+  }
+}
