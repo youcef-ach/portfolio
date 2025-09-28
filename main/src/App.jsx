@@ -3,6 +3,7 @@ import { useState } from "react";
 import Navbar from "./components/Navbar";
 import Hero from "./sections/hero/hero";
 import About from "./sections/about/About";
+import TechStack from "./sections/techStack/techStack";
 import "./index.css";
 
 const { Content } = Layout;
@@ -37,6 +38,7 @@ function App() {
           >
             <Hero />
             <About />
+            <TechStack />
           </Flex>
         </Content>
       </Layout>

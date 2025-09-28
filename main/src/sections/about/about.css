@@ -1,3 +1,8 @@
+.about {
+  position: relative;
+  z-index: 5;
+}
+
 .name {
   font-weight: 500 !important;
   font-size: 45px !important;
@@ -10,7 +15,7 @@
   flex-basis: 0;
   flex-grow: 1.4;
   flex-shrink: 1;
-  min-width: 450px;
+  min-width: 426px;
 }
 
 .card2 {
@@ -21,10 +26,11 @@
 }
 
 .card3 {
-    flex-basis: 0;
-    flex-grow: 1;
-    flex-shrink: 1;
-    min-width: 322px;
+  flex-basis: 0;
+  flex-grow: 1;
+  flex-shrink: 1;
+  min-width: 322px;
+  padding-block: 60px;
 }
 
 .card5 {
@@ -32,4 +38,20 @@
   flex-grow: 1;
   flex-shrink: 1;
   min-width: 322px;
+}
+
+.card6 {
+  min-width: 408px;
+  height: 234px;
+}
+.card7 {
+  flex-basis: 0;
+  flex-grow: 2.5;
+  flex-shrink: 1;
+}
+
+@media (max-width: 805px) {
+  .card6 {
+    width: 100%;
+  }
 }

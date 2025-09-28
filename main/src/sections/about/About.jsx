@@ -6,6 +6,7 @@ import insta from "../../assets/images/insta.svg";
 import linkedin from "../../assets/images/linkedin.svg";
 import whatsapp from "../../assets/images/whatsapp.svg";
 import SMediaCard from "../../components/sMediaCard";
+import Gradients from "../../components/gradients";
 
 function About() {
   return (
@@ -14,9 +15,16 @@ function About() {
       className="about fullW globalPadding sectionPadding"
       gap={100}
     >
-      <Flex justify="space-between" align="center" className="fullW" gap={50}>
+      <Gradients class0="aboutGradient" class1={"aboutGradient1"} class2={"aboutGradient2"} />
+      <Flex
+        justify="space-between"
+        align="center"
+        className="fullW"
+        gap={50}
+        style={{ position: "relative", zIndex: 10 }}
+      >
         <Flex vertical justify="center" align="start" className="aboutTitle">
-          <Typography.Title className="subHeader1 noMP">
+          <Typography.Title className="subHeader1 noMP tShadow">
             ABOUT ME
           </Typography.Title>
           <Typography.Title className="noMP subHeader2" type="secondary">
@@ -25,10 +33,15 @@ function About() {
         </Flex>
         <Flex className="divider" justify="center" align="center" gap={30}>
           <div className="dLine"></div>
-          <Typography.Text>01</Typography.Text>
+          <Typography.Text className="tShadow">01</Typography.Text>
         </Flex>
       </Flex>
-      <Flex vertical className="fullW" gap={20}>
+      <Flex
+        vertical
+        className="fullW"
+        gap={20}
+        style={{ position: "relative", zIndex: 10 }}
+      >
         <Flex justify="center" gap={20} className="fullW" wrap>
           <Flex
             vertical
@@ -38,7 +51,7 @@ function About() {
             className="darkGrayBg cardRadius card1"
           >
             <img src={flower} style={{ height: 135, width: 135 }} />
-            <Flex vertical gap={10} justify="center" align="start">
+            <Flex vertical gap={15} justify="center" align="start">
               <Typography.Title className="name noMP">
                 Achouri Youcef
               </Typography.Title>
@@ -64,11 +77,11 @@ function About() {
             vertical
             justify="center"
             align="start"
-            gap={30}
+            gap={15}
             className="cardRadius darkGrayBg card3"
           >
-            <Typography.Title className="noMP cardTitle">
-              Web Design &cDev
+            <Typography.Title className="noMP cardTitle tShadow">
+              Web Design & Dev
             </Typography.Title>
             <Typography.Text className="cardText">
               Cleanly Designed, Conversion-focused, and build for easy updates
@@ -78,10 +91,10 @@ function About() {
             vertical
             justify="center"
             align="start"
-            gap={30}
+            gap={15}
             className="cardRadius darkGrayBg card3"
           >
-            <Typography.Title className="noMP cardTitle">
+            <Typography.Title className="noMP cardTitle tShadow">
               UX UI Design
             </Typography.Title>
             <Typography.Text className="cardText">
@@ -89,23 +102,29 @@ function About() {
             </Typography.Text>
           </Flex>
         </Flex>
-        <Flex justify="center" gap={20}>
+        <Flex justify="center" align="start" gap={20} wrap className="fullW">
           <Flex
             vertical
-            justify="center"
-            align="center"
-            gap={20}
-            className="cardRadius darkGrayBg card6"
+            justify="start"
+            align="start"
+            gap={30}
+            className="cardRadius darkGrayBg card6 be"
           >
-            <Typography.Title>BE YOURSELF</Typography.Title>
-            <Typography.Title>BE DIFFERENT!</Typography.Title>
-            <Typography.Title>BUILD DIFFERENT!</Typography.Title>
+            <Typography.Title className="tShadow noMP cardTitle">
+              BE YOURSELF
+            </Typography.Title>
+            <Typography.Title className="tShadow noMP cardTitle">
+              BE DIFFERENT!
+            </Typography.Title>
+            <Typography.Title className="tShadow noMP cardTitle">
+              BUILD DIFFERENT!
+            </Typography.Title>
           </Flex>
-          <Flex justify="center" align="center" gap={20} wrap>
-            <SMediaCard name="Dribbble" icon={fb} />
-            <SMediaCard name="Dribbble" icon={insta} />
-            <SMediaCard name="Dribbble" icon={linkedin} />
-            <SMediaCard name="Dribbble" icon={whatsapp} />
+          <Flex justify="center" align="center" gap={20} wrap className="card7">
+            <SMediaCard name="Facebook" icon={fb} />
+            <SMediaCard name="Instagram" icon={insta} />
+            <SMediaCard name="LinkedIn" icon={linkedin} />
+            <SMediaCard name="Whatsapp" icon={whatsapp} />
           </Flex>
         </Flex>
       </Flex>

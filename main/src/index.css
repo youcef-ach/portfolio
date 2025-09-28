@@ -114,6 +114,13 @@ body {
   width: 47px;
 }
 
+.tShadow {
+  background-image: linear-gradient(to bottom, #fff 43.1%, #34323d);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent !important;
+}
+
 @media (max-width: 1288px) {
   .globalPadding {
     padding-inline: 80px;

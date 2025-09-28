@@ -6,7 +6,7 @@ function sMediaCard({ name, icon }) {
     <Flex justify="space-between" align="center" className="card5 darkGrayBg cardRadius">
       <Flex justify="cenetr" align="center" gap={15}>
         <img src={icon} className="sMediaImg" />
-        <Typography.Title className="cardTitle noMP">{name}</Typography.Title>
+        <Typography.Title className="cardTitle noMP tShadow">{name}</Typography.Title>
       </Flex>
       <RightOutlined />
     </Flex>

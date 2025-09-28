@@ -21,6 +21,24 @@
   animation: wander-right 12s ease-in-out infinite;
 }
 
+.aboutGradient {
+  height: 400px;
+  aspect-ratio: 1;
+}
+
+.aboutGradient1 {
+  background-color: #ff28d5;
+  bottom: 300px;
+  right: 150px;
+  animation: wander-left 10s ease-in-out infinite;
+}
+
+.aboutGradient2 {
+  background-color: #1c34ff;
+  bottom: 100px;
+  right: 50px;
+}
+
 @keyframes wander-left {
   0% {
     transform: translateX(0);
