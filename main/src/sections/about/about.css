@@ -23,6 +23,9 @@
   flex-grow: 1;
   flex-shrink: 1;
   min-width: 322px;
+  min-height: 322px;
+  background-color: #c8d751;
+  cursor: grab;
 }
 
 .card3 {
@@ -48,6 +51,13 @@
   flex-basis: 0;
   flex-grow: 2.5;
   flex-shrink: 1;
+}
+
+.modelContainer {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 20px;
 }
 
 @media (max-width: 805px) {

@@ -7,15 +7,53 @@ import linkedin from "../../assets/images/linkedin.svg";
 import whatsapp from "../../assets/images/whatsapp.svg";
 import SMediaCard from "../../components/sMediaCard";
 import Gradients from "../../components/gradients";
+import { Canvas } from "@react-three/fiber";
+import Alien from "../../components/models/Cute1";
+import { OrbitControls, Scroll } from "@react-three/drei";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 function About() {
+  useGSAP(() => {
+    gsap.from(".animateCard", {
+      opacity: 0,
+      y: 50,
+      stagger: 0.2,
+      duration: 0.8,
+      ease: "power3.inOut",
+      scrollTrigger: {
+        trigger: "#about",
+        start: "top top",
+      },
+    });
+    gsap.from(".animateText", {
+      opacity: 0,
+      y: 20,
+      stagger: 0.15,
+      duration: 0.6,
+      ease: "power3.inOut",
+      scrollTrigger: {
+        trigger: "#about",
+        start: "top top",
+      },
+    });
+  }, []);
+
   return (
     <Flex
       vertical
       className="about fullW globalPadding sectionPadding"
+      id="about"
       gap={100}
     >
-      <Gradients class0="aboutGradient" class1={"aboutGradient1"} class2={"aboutGradient2"} />
+      <Gradients
+        class0="aboutGradient"
+        class1={"aboutGradient1"}
+        class2={"aboutGradient2"}
+      />
       <Flex
         justify="space-between"
         align="center"
@@ -63,14 +101,17 @@ function About() {
               </Typography.Text>
             </Flex>
           </Flex>
-          <Flex
-            vertical
-            justify="center"
-            align="start"
-            className="cardRadius darkGrayBg card2"
-          >
-            hello
-          </Flex>
+          <div className="cardRadius  card2 noMP">
+            {/* <CuteModel /> */}
+            <Canvas>
+              <OrbitControls enableZoom={false} />
+              <Alien
+                scale={2}
+                position={[0, -5.5, 0]}
+                rotation={[0, -0.5, 0]}
+              />
+            </Canvas>
+          </div>
         </Flex>
         <Flex justify="center" gap={20} wrap>
           <Flex
@@ -78,9 +119,9 @@ function About() {
             justify="center"
             align="start"
             gap={15}
-            className="cardRadius darkGrayBg card3"
+            className="cardRadius darkGrayBg card3 animateCard"
           >
-            <Typography.Title className="noMP cardTitle tShadow">
+            <Typography.Title className="noMP cardTitle tShadow animateText">
               Web Design & Dev
             </Typography.Title>
             <Typography.Text className="cardText">
@@ -92,9 +133,9 @@ function About() {
             justify="center"
             align="start"
             gap={15}
-            className="cardRadius darkGrayBg card3"
+            className="cardRadius darkGrayBg card3 animateCard"
           >
-            <Typography.Title className="noMP cardTitle tShadow">
+            <Typography.Title className="noMP cardTitle tShadow animateText">
               UX UI Design
             </Typography.Title>
             <Typography.Text className="cardText">
@@ -108,15 +149,15 @@ function About() {
             justify="start"
             align="start"
             gap={30}
-            className="cardRadius darkGrayBg card6 be"
+            className="cardRadius darkGrayBg card6 be animateCard"
           >
-            <Typography.Title className="tShadow noMP cardTitle">
+            <Typography.Title className="tShadow noMP cardTitle animateText">
               BE YOURSELF
             </Typography.Title>
-            <Typography.Title className="tShadow noMP cardTitle">
+            <Typography.Title className="tShadow noMP cardTitle animateText">
               BE DIFFERENT!
             </Typography.Title>
-            <Typography.Title className="tShadow noMP cardTitle">
+            <Typography.Title className="tShadow noMP cardTitle animateText">
               BUILD DIFFERENT!
             </Typography.Title>
           </Flex>

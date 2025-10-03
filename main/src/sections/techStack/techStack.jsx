@@ -1,16 +1,17 @@
 import { Flex, Typography } from "antd";
 import SkillCard from "../../components/skillCard";
-import js from '../../assets/images/js.svg';
-import react from '../../assets/images/react.svg';
-import ts from '../../assets/images/ts.svg';
-import aws from '../../assets/images/aws.svg';
-import css from '../../assets/images/css.svg';
-import figma from '../../assets/images/figma.svg';
-import github from '../../assets/images/github.svg';
-import gsap from '../../assets/images/gsap.svg';
-import html from '../../assets/images/html.svg';
-import three from '../../assets/images/threejs.svg';
+import js from "../../assets/images/js.svg";
+import react from "../../assets/images/react.svg";
+import ts from "../../assets/images/ts.svg";
+import aws from "../../assets/images/aws.svg";
+import css from "../../assets/images/css.svg";
+import figma from "../../assets/images/figma.svg";
+import github from "../../assets/images/github.svg";
+import gsap from "../../assets/images/gsap.svg";
+import html from "../../assets/images/html.svg";
+import three from "../../assets/images/threejs.svg";
 import "./techStack.css";
+import { useGSAP } from "@gsap/react";
 
 function techStack() {
   return (
@@ -40,16 +41,30 @@ function techStack() {
         </Flex>
       </Flex>
       <Flex className="slider fullW" justify="center" align="center" gap={60}>
-        <SkillCard logo={js}/>
-        <SkillCard logo={react}/>
-        <SkillCard logo={ts} />
-        <SkillCard logo={html}/>
-        <SkillCard logo={css}/>
-        <SkillCard logo={three}/>
-        <SkillCard logo={github}/>
-        <SkillCard logo={aws}/>
-        <SkillCard logo={figma}/>
-        <SkillCard logo={gsap}/>
+        <Flex justify="center" align="center" className="slider2" gap={60}>
+          <SkillCard logo={js} />
+          <SkillCard logo={react} />
+          <SkillCard logo={ts} />
+          <SkillCard logo={html} />
+          <SkillCard logo={css} />
+          <SkillCard logo={three} />
+          <SkillCard logo={github} />
+          <SkillCard logo={aws} />
+          <SkillCard logo={figma} />
+          <SkillCard logo={gsap} />
+        </Flex>
+        <Flex justify="center" align="center" className="slider1" gap={60}>
+          <SkillCard logo={js} />
+          <SkillCard logo={react} />
+          <SkillCard logo={ts} />
+          <SkillCard logo={html} />
+          <SkillCard logo={css} />
+          <SkillCard logo={three} />
+          <SkillCard logo={github} />
+          <SkillCard logo={aws} />
+          <SkillCard logo={figma} />
+          <SkillCard logo={gsap} />
+        </Flex>
       </Flex>
     </Flex>
   );
