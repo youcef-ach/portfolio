@@ -63,5 +63,11 @@
 @media (max-width: 805px) {
   .card6 {
     width: 100%;
+    min-width: 0;
+  }
+  .card1 {
+    flex-basis: 100%;
+    min-width: 0px;
+    flex-shrink: 0;
   }
 }

@@ -7,6 +7,11 @@
   background-image: linear-gradient(45deg, #b6b6b6, #505050);
   position: relative;
   overflow: hidden;
+  transition: all 0.5s;
+}
+
+.skillCard:hover {
+  transform: translateY(-30px);
 }
 
 .skillInner {
@@ -41,46 +46,24 @@
 
 .slider {
   height: 150px;
-}
-
-.slider1 {
-  transform: translateX(-2880px);
-  border: 1px solid red;
-  animation-name: slider1;
-  animation-duration: 15s;
-  animation-iteration-count: infinite;
+  animation-name: slider;
+  animation-duration: 30s;
   animation-timing-function: linear;
-  animation-delay: 8.6s;
-}
-
-.slider2 {
-  transform: translateX(-780px);
-  border: 1px solid green;
-  animation-name: slider2;
-  animation-duration: 15s;
   animation-iteration-count: infinite;
-  animation-timing-function: linear;
+  transform: translateX(-46px);
 }
 
 .tech {
   overflow: hidden;
+  position: relative;
 }
 
-@keyframes slider1 {
+@keyframes slider {
   0% {
-    transform: translateX(-2880px);
+    transform: translateX(-46px);
   }
   100% {
-    transform: translateX(780px);
-  }
-}
-
-@keyframes slider2 {
-  0% {
-    transform: translateX(-780px);
-  }
-  100% {
-    transform: translateX(2880px);
+    transform: translateX(-2146px);
   }
 }
 

@@ -1,0 +1,40 @@
+.projectsCont {
+    border: 1px solid red;
+    overflow: hidden;
+    position: relative;
+}
+
+.projects {
+  flex-basis: 496px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  transition: all 2s;
+}
+
+.project {
+  width: 1044px;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.pBottom {
+  position: absolute;
+  bottom: 0;
+  background-color: #212121b2;
+  height: 70px;
+  z-index: 10;
+  padding-inline: 30px;
+}
+
+.pArrow {
+  border-radius: 50%;
+  padding: 10px;
+  background-color: #598eff;
+  cursor: pointer;
+  margin-top: -50px;
+  transition: all .2s;
+}
+
+.pArrow:hover {
+  background-color: #ff28d5;
+}

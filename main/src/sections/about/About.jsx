@@ -61,7 +61,7 @@ function About() {
         gap={50}
         style={{ position: "relative", zIndex: 10 }}
       >
-        <Flex vertical justify="center" align="start" className="aboutTitle">
+        <Flex vertical justify="center" align="start" className="aboutTitle" gap={20}>
           <Typography.Title className="subHeader1 noMP tShadow">
             ABOUT ME
           </Typography.Title>

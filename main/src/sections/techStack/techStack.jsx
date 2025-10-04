@@ -27,7 +27,7 @@ function techStack() {
         gap={50}
         style={{ position: "relative", zIndex: 10 }}
       >
-        <Flex vertical justify="center" align="start" className="aboutTitle">
+        <Flex vertical justify="center" align="start" className="aboutTitle" gap={20}>
           <Typography.Title className="subHeader1 noMP tShadow">
             TECH STACK
           </Typography.Title>
@@ -40,7 +40,9 @@ function techStack() {
           <Typography.Text className="tShadow">02</Typography.Text>
         </Flex>
       </Flex>
-      <Flex className="slider fullW" justify="center" align="center" gap={60}>
+      <div className="shadow1"></div>
+      <div className="shadow2"></div>
+      <Flex className="slider fullW" justify="start" align="center" gap={60}>
         <Flex justify="center" align="center" className="slider2" gap={60}>
           <SkillCard logo={js} />
           <SkillCard logo={react} />

@@ -5,6 +5,7 @@ import Hero from "./sections/hero/hero";
 import About from "./sections/about/About";
 import TechStack from "./sections/techStack/techStack";
 import "./index.css";
+import Projects from "./sections/projects/Projects";
 
 const { Content } = Layout;
 
@@ -39,6 +40,7 @@ function App() {
             <Hero />
             <About />
             <TechStack />
+            <Projects />
           </Flex>
         </Content>
       </Layout>
