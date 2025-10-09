@@ -1,0 +1,35 @@
+.comment {
+  padding: 30px;
+  width: 100%;
+  transition: all 0.5s;
+}
+
+.comment:hover {
+  background-color: #1c34ff;
+}
+
+.cName, .cText {
+  transition: all 0.5s;
+}
+
+.comment:hover .cName,
+.comment:hover .cText {
+  color: white !important;
+}
+
+.client {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+}
+
+.quote {
+  height: 56.24;
+  width: 100px;
+}
+
+.vFlex {
+  flex-basis: 0;
+  flex-grow: 1;
+  flex-shrink: 1;
+}

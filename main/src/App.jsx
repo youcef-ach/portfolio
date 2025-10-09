@@ -6,6 +6,8 @@ import About from "./sections/about/About";
 import TechStack from "./sections/techStack/techStack";
 import "./index.css";
 import Projects from "./sections/projects/Projects";
+import Testimonials from "./sections/testimonials/Testimonials";
+import Contact from './sections/contact/Contact'
 
 const { Content } = Layout;
 
@@ -41,6 +43,8 @@ function App() {
             <About />
             <TechStack />
             <Projects />
+            <Testimonials />
+            <Contact />
           </Flex>
         </Content>
       </Layout>

@@ -4,7 +4,7 @@ import { ArrowRightOutlined } from "@ant-design/icons";
 function Project({ img, name, number }) {
   return (
     <div className="project">
-      <img src={img} style={{ height: "100%", width: "100%" }} />
+      <img src={img} className="projectMainImage" />
       <Flex className="pBottom fullW" justify="space-between" align="center">
         <Typography.Title className="header2 noMP">
           {number}. {name}

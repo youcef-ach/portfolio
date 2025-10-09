@@ -12,7 +12,9 @@ import right from "../../assets/images/CaretRight.svg";
 import { useState } from "react";
 
 function Projects() {
-  const [translate, setTranslate] = useState(0);
+  const [translate, setTranslate] = useState(
+    (window.innerWidth - 212) * 0.5 * 0.7 + 15
+  );
 
   return (
     <Flex
@@ -21,8 +23,6 @@ function Projects() {
       id="about"
       gap={100}
     >
-      <div className="shadow1" style={{ height: 500, top: 330 }}></div>
-      <div className="shadow2" style={{ height: 500, top: 330 }}></div>
       <Flex
         justify="space-between"
         align="center"
@@ -49,10 +49,13 @@ function Projects() {
           <Typography.Text className="tShadow">03</Typography.Text>
         </Flex>
       </Flex>
+      <div className="pSh pSh1"></div>
+      <div className="pSh pSh2"></div>
       <Flex
-        justify="start"
+        justify="center"
         gap={30}
         className="fullW projects"
+        id="projects"
         style={{ transform: `translateX(${translate}px)` }}
       >
         <Project img={p1} name={"Sofi"} number={1} />
@@ -67,16 +70,16 @@ function Projects() {
           src={left}
           className="pArrow"
           onClick={() => {
-            if (translate == 0) return;
-            else setTranslate(translate + 1044);
+            if (translate >= (window.innerWidth - 212) * 0.7 * 2 + 30) return;
+            else setTranslate(translate + (window.innerWidth - 212) * 0.7 + 30);
           }}
         />
         <img
           src={right}
           className="pArrow"
           onClick={() => {
-            if (translate == -1044 * 5) return;
-            else setTranslate(translate - 1044);
+            if (translate <= -(window.innerWidth - 212) * 0.7 * 2 - 30) return;
+            else setTranslate(translate - (window.innerWidth - 212) * 0.7 - 30);
           }}
         />
       </Flex>

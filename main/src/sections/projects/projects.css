@@ -1,20 +1,24 @@
 .projectsCont {
-    border: 1px solid red;
-    overflow: hidden;
-    position: relative;
+  overflow: hidden;
+  position: relative;
 }
 
 .projects {
-  flex-basis: 496px;
-  flex-grow: 0;
-  flex-shrink: 0;
+  height: 440px;
   transition: all 2s;
 }
 
 .project {
-  width: 1044px;
+  width: 70%;
   flex-shrink: 0;
   position: relative;
+  height: 100%;
+}
+
+.projectMainImage {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
 }
 
 .pBottom {
@@ -32,9 +36,52 @@
   background-color: #598eff;
   cursor: pointer;
   margin-top: -50px;
-  transition: all .2s;
+  transition: all 0.2s;
+  height: 50px;
+  width: 50px;
 }
 
 .pArrow:hover {
   background-color: #ff28d5;
+}
+
+.pSh {
+  position: absolute;
+  width: 150px;
+  height: 440px;
+  bottom: 200px;
+  z-index: 10;
+}
+
+.pSh1 {
+  background-image: linear-gradient(90deg, rgba(11, 6, 32, 1), transparent);
+  left: 0;
+}
+
+.pSh2 {
+  background-image: linear-gradient(-90deg, rgba(11, 6, 32, 1), transparent);
+  right: 0;
+}
+
+@media (max-width: 1010px) {
+  .projects {
+    height: 290px;
+  }
+  .pSh {
+    height: 290px;
+    width: 100px;
+  }
+}
+
+@media (max-width: 760px) {
+  .projects {
+    height: 400px;
+  }
+  .projects {
+    gap: 18px !important;
+  }
+  .pSh {
+    height: 400px;
+    width: 50px;
+  }
 }
