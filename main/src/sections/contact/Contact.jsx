@@ -35,7 +35,7 @@ function Testimonials() {
           <Typography.Text className="tShadow">05</Typography.Text>
         </Flex>
       </Flex>
-      <Flex justify="center" align="center" gap={20}>
+      <Flex justify="center" align="center" gap={30} wrap>
         <Form className="fullW cForm" layout="vertical">
           <Form.Item label="Name">
             <Input type="text" placeholder="Name"></Input>

@@ -3,6 +3,7 @@
   flex-basis: 0;
   flex-grow: 1;
   flex-shrink: 1;
+  min-width: 322px;
 }
 
 .cForm label {
@@ -12,7 +13,8 @@
   letter-spacing: 0% !important;
 }
 
-.cForm input::placeholder,.cForm textarea::placeholder {
+.cForm input::placeholder,
+.cForm textarea::placeholder {
   font-weight: 250;
   font-size: 23px;
   line-height: 100%;
