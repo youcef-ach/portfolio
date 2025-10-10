@@ -1,0 +1,29 @@
+.model,
+.cForm {
+  flex-basis: 0;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+.cForm label {
+  font-weight: 600 !important;
+  font-size: 24px !important;
+  line-height: 100% !important;
+  letter-spacing: 0% !important;
+}
+
+.cForm input::placeholder,.cForm textarea::placeholder {
+  font-weight: 250;
+  font-size: 23px;
+  line-height: 100%;
+}
+
+.cForm input {
+  height: 56px;
+  border-radius: 5px;
+}
+
+.cForm textarea {
+  border-radius: 5px;
+  resize: none;
+}

@@ -9,12 +9,17 @@ import p5 from "../../assets/images/p5.png";
 import p6 from "../../assets/images/p6.png";
 import left from "../../assets/images/CaretLeft.svg";
 import right from "../../assets/images/CaretRight.svg";
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 
 function Projects() {
-  const [translate, setTranslate] = useState(
-    (window.innerWidth - 212) * 0.5 * 0.7 + 15
-  );
+  const [translate, setTranslate] = useState(0);
+  const myRef = useRef(null);
+
+  useEffect(() => {
+    const offset = myRef.current.getBoundingClientRect().width * 0.7 * 0.5 + 15;
+    console.log(offset);
+    setTranslate(offset);
+  }, []);
 
   return (
     <Flex
@@ -57,6 +62,7 @@ function Projects() {
         className="fullW projects"
         id="projects"
         style={{ transform: `translateX(${translate}px)` }}
+        ref={myRef}
       >
         <Project img={p1} name={"Sofi"} number={1} />
         <Project img={p2} name={"Tampe"} number={2} />
@@ -70,16 +76,34 @@ function Projects() {
           src={left}
           className="pArrow"
           onClick={() => {
-            if (translate >= (window.innerWidth - 212) * 0.7 * 2 + 30) return;
-            else setTranslate(translate + (window.innerWidth - 212) * 0.7 + 30);
+            if (
+              translate >=
+              myRef.current.getBoundingClientRect().width * 0.7 * 2 + 30
+            )
+              return;
+            else
+              setTranslate(
+                translate +
+                  myRef.current.getBoundingClientRect().width * 0.7 +
+                  30
+              );
           }}
         />
         <img
           src={right}
           className="pArrow"
           onClick={() => {
-            if (translate <= -(window.innerWidth - 212) * 0.7 * 2 - 30) return;
-            else setTranslate(translate - (window.innerWidth - 212) * 0.7 - 30);
+            if (
+              translate <=
+              -myRef.current.getBoundingClientRect().width * 0.7 * 2 - 30
+            )
+              return;
+            else
+              setTranslate(
+                translate -
+                  myRef.current.getBoundingClientRect().width * 0.7 -
+                  30
+              );
           }}
         />
       </Flex>

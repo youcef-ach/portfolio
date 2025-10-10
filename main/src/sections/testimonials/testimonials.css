@@ -33,3 +33,7 @@
   flex-grow: 1;
   flex-shrink: 1;
 }
+
+.vFlex {
+  min-width: 322px;
+}

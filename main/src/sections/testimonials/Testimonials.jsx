@@ -40,7 +40,7 @@ function Testimonials() {
           <Typography.Text className="tShadow">04</Typography.Text>
         </Flex>
       </Flex>
-      <Flex justify="center" align="start" gap={20}>
+      <Flex justify="center" align="start" gap={20} wrap>
         <Flex vertical className="vFlex" gap={20}>
           <Comment client={client3} />
           <Comment client={client4} />

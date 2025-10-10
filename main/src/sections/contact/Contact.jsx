@@ -1,4 +1,4 @@
-import { Flex, Form, Input, Typography } from "antd";
+import { Button, Flex, Form, Input, Typography } from "antd";
 import "./contact.css";
 
 function Testimonials() {
@@ -35,12 +35,39 @@ function Testimonials() {
           <Typography.Text className="tShadow">05</Typography.Text>
         </Flex>
       </Flex>
-      <Flex justify="center" align="center">
-        <Form className="fullW" variant="">
+      <Flex justify="center" align="center" gap={20}>
+        <Form className="fullW cForm" layout="vertical">
+          <Form.Item label="Name">
+            <Input type="text" placeholder="Name"></Input>
+          </Form.Item>
+          <Form.Item label="Email address">
+            <Input type="email" placeholder="Email address"></Input>
+          </Form.Item>
+          <Form.Item label="Subject">
+            <Input type="text" placeholder="Subject"></Input>
+          </Form.Item>
+          <Form.Item label="Message">
+            <Input.TextArea placeholder="Message" rows={8}></Input.TextArea>
+          </Form.Item>
           <Form.Item>
-            <Input type="text" placeholder="type your message here"></Input>
+            <Button
+              htmlType="submit"
+              style={{
+                backgroundColor: "#598EFF",
+                fontWeight: 500,
+                fontSize: 23,
+                lineHeight: "100%",
+                letterSpacing: 0.85,
+                borderRadius: 5,
+                height: 60,
+              }}
+              block
+            >
+              submit
+            </Button>
           </Form.Item>
         </Form>
+        <div className="model"></div>
       </Flex>
     </Flex>
   );

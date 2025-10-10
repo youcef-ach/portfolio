@@ -7,7 +7,7 @@ import TechStack from "./sections/techStack/techStack";
 import "./index.css";
 import Projects from "./sections/projects/Projects";
 import Testimonials from "./sections/testimonials/Testimonials";
-import Contact from './sections/contact/Contact'
+import Contact from "./sections/contact/Contact";
 
 const { Content } = Layout;
 
@@ -21,13 +21,16 @@ function App() {
         token: {
           colorBgBase: dark ? "#0B0620" : "#fff",
           colorTextBase: "#fff",
-          colorPrimary: "#598EFF",
+          colorPrimary: "#fff",
+          colorBgContainer: "#17151f",
+          colorBorder: "transparent",
+          borderRadius: 20,
         },
         components: {
           Layout: {
             headerBg: "transparent",
           },
-        },
+        }
       }}
     >
       <Layout>
