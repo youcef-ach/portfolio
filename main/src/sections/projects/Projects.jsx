@@ -2,9 +2,9 @@ import { Flex, Typography } from "antd";
 import "./projects.css";
 import Project from "../../components/Project";
 import p1 from "../../assets/images/p1.png";
-import p2 from "../../assets/images/p2.png";
-import p3 from "../../assets/images/p3.png";
-import p4 from "../../assets/images/p4.png";
+import p2 from "../../assets/images/entr-admin.png";
+import p3 from "../../assets/images/esi.png";
+import p4 from "../../assets/images/e-commerce.png";
 import p5 from "../../assets/images/p5.png";
 import p6 from "../../assets/images/p6.png";
 import left from "../../assets/images/CaretLeft.svg";
@@ -65,9 +65,26 @@ function Projects() {
         ref={myRef}
       >
         <Project img={p1} name={"Sofi"} number={1} />
-        <Project img={p2} name={"Tampe"} number={2} />
-        <Project img={p3} name={"Tampe"} number={3} />
-        <Project img={p4} name={"Tampe"} number={4} />
+        <Project
+          img={p4}
+          name={"E-commerce"}
+          number={2}
+          link={
+            "e-commerce-react-1326g0sb6-youcefach055gmailcoms-projects.vercel.app"
+          }
+        />
+        <Project
+          img={p3}
+          name={"ESI SBA 360 Tour"}
+          number={3}
+          link={"panoriha-b0ahz0yyo-youcefach055gmailcoms-projects.vercel.app"}
+        />
+        <Project
+          img={p2}
+          name={"entreprise admin dashboard"}
+          number={4}
+          link={"entreprise-admin-dashboard-1grh.vercel.app"}
+        />
         <Project img={p5} name={"Tampe"} number={5} />
         <Project img={p6} name={"Tampe"} number={6} />
       </Flex>

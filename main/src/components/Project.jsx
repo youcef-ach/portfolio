@@ -1,7 +1,7 @@
 import { Flex, Typography } from "antd";
 import { ArrowRightOutlined } from "@ant-design/icons";
 
-function Project({ img, name, number }) {
+function Project({ img, name, number,link }) {
   return (
     <div className="project">
       <img src={img} className="projectMainImage" />
@@ -16,7 +16,9 @@ function Project({ img, name, number }) {
           gap={20}
         >
           <Typography.Title className="header2 noMP">
-            Preview Project
+            <a href={'https://'+link} style={{color:"white"}} target="blank">
+              Preview Project
+            </a>
           </Typography.Title>
           <ArrowRightOutlined className="header2" />
         </Flex>

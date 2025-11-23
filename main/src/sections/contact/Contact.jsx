@@ -1,5 +1,5 @@
 import { Button, Flex, Form, Input, Typography } from "antd";
-import Avatar from "../../components/models/Normal.jsx";
+// import Avatar from "../../components/models/Normal.jsx";
 import "./contact.css";
 import { OrbitControls, Scroll } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
@@ -73,7 +73,7 @@ function Testimonials() {
         <div className="model">
           <Canvas>
             <OrbitControls enableZoom={false} />
-            <Avatar scale={2} position={[0, -5.5, 0]} rotation={[0, -0.5, 0]} />
+            {/* <Avatar scale={2} position={[0, -5.5, 0]} rotation={[0, -0.5, 0]} /> */}
           </Canvas>
         </div>
       </Flex>
