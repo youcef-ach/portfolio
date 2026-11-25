@@ -66,7 +66,7 @@ function About() {
             ABOUT ME
           </Typography.Title>
           <Typography.Title className="noMP subHeader2" type="secondary">
-            Passionate Creator, Lifelong Learner
+            Spatial AI, 3D Vision &amp; Full-Stack Systems
           </Typography.Title>
         </Flex>
         <Flex className="divider" justify="center" align="center" gap={30}>
@@ -91,13 +91,13 @@ function About() {
             <img src={flower} style={{ height: 135, width: 135 }} />
             <Flex vertical gap={15} justify="center" align="start">
               <Typography.Title className="name noMP">
-                Achouri Youcef
+                Achouri Youcef Islem
               </Typography.Title>
               <Typography.Text className="cardText">
-                I am a San francisco-based product designer with a focus on web
-                design, illustration, a visual development. I have a diverse
-                range of experience having worked across various fields and
-                industries.
+                Final-year State Engineering &amp; Master&apos;s candidate in Artificial Intelligence and Data Science at ESI-SBA (Algeria). This 2025 React Three Fiber prototype showcases my early 3D web work — explore full case studies and research at{" "}
+                <a href="https://youcef-achouri.vercel.app" target="_blank" rel="noreferrer" style={{ color: "#598EFF" }}>
+                  youcef-achouri.vercel.app
+                </a>.
               </Typography.Text>
             </Flex>
           </Flex>
@@ -122,10 +122,10 @@ function About() {
             className="cardRadius darkGrayBg card3 animateCard"
           >
             <Typography.Title className="noMP cardTitle tShadow animateText">
-              Web Design & Dev
+              Spatial 3D &amp; WebGL
             </Typography.Title>
             <Typography.Text className="cardText">
-              Cleanly Designed, Conversion-focused, and build for easy updates
+              Interactive Three.js / Babylon.js scenes, point clouds, and LiDAR inspection UIs
             </Typography.Text>
           </Flex>
           <Flex
@@ -136,10 +136,10 @@ function About() {
             className="cardRadius darkGrayBg card3 animateCard"
           >
             <Typography.Title className="noMP cardTitle tShadow animateText">
-              UX UI Design
+              Applied AI &amp; Systems
             </Typography.Title>
             <Typography.Text className="cardText">
-              Seamless web or mobile app design to wow your users.
+              3D computer vision, deep learning models, and production Django/NestJS APIs.
             </Typography.Text>
           </Flex>
         </Flex>
@@ -152,20 +152,20 @@ function About() {
             className="cardRadius darkGrayBg card6 be animateCard"
           >
             <Typography.Title className="tShadow noMP cardTitle animateText">
-              BE YOURSELF
+              3D VISION
             </Typography.Title>
             <Typography.Title className="tShadow noMP cardTitle animateText">
-              BE DIFFERENT!
+              APPLIED AI
             </Typography.Title>
             <Typography.Title className="tShadow noMP cardTitle animateText">
-              BUILD DIFFERENT!
+              WEB SYSTEMS
             </Typography.Title>
           </Flex>
           <Flex justify="center" align="center" gap={20} wrap className="card7">
-            <SMediaCard name="Facebook" icon={fb} />
-            <SMediaCard name="Instagram" icon={insta} />
-            <SMediaCard name="LinkedIn" icon={linkedin} />
-            <SMediaCard name="Whatsapp" icon={whatsapp} />
+            <SMediaCard name="Main Portfolio" icon={flower} href="https://youcef-achouri.vercel.app" />
+            <SMediaCard name="GitHub" icon={fb} href="https://github.com/youcef-ach" />
+            <SMediaCard name="LinkedIn" icon={linkedin} href="https://www.linkedin.com/in/youcef-achouri/" />
+            <SMediaCard name="Email" icon={whatsapp} href="mailto:yi.achouri@esi-sba.dz" />
           </Flex>
         </Flex>
       </Flex>

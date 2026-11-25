@@ -9,7 +9,7 @@ function Testimonials() {
     <Flex
       vertical
       className="projectsCont fullW globalPadding sectionPadding"
-      id="about"
+      id="contact"
       gap={100}
     >
       <Flex

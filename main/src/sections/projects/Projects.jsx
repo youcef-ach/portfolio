@@ -25,7 +25,7 @@ function Projects() {
     <Flex
       vertical
       className="projectsCont fullW globalPadding sectionPadding"
-      id="about"
+      id="projects"
       gap={100}
     >
       <Flex
@@ -64,29 +64,42 @@ function Projects() {
         style={{ transform: `translateX(${translate}px)` }}
         ref={myRef}
       >
-        <Project img={p1} name={"Sofi"} number={1} />
+        <Project
+          img={p1}
+          name={"Main Engineering Portfolio"}
+          number={1}
+          link={"youcef-achouri.vercel.app"}
+        />
         <Project
           img={p4}
           name={"E-commerce"}
           number={2}
-          link={
-            "e-commerce-react-1326g0sb6-youcefach055gmailcoms-projects.vercel.app"
-          }
+          link={"youcef-achouri.vercel.app/archive/"}
         />
         <Project
           img={p3}
-          name={"ESI SBA 360 Tour"}
+          name={"Panoriha · ESI-SBA 360 Tour"}
           number={3}
-          link={"panoriha-b0ahz0yyo-youcefach055gmailcoms-projects.vercel.app"}
+          link={"youcef-achouri.vercel.app/work/panoriha-advanced/"}
         />
         <Project
           img={p2}
-          name={"entreprise admin dashboard"}
+          name={"Enterprise Admin Dashboard"}
           number={4}
           link={"entreprise-admin-dashboard-1grh.vercel.app"}
         />
-        <Project img={p5} name={"Tampe"} number={5} />
-        <Project img={p6} name={"Tampe"} number={6} />
+        <Project
+          img={p5}
+          name={"Tourvisto AI Travel"}
+          number={5}
+          link={"touristic-agency-dashboard.vercel.app"}
+        />
+        <Project
+          img={p6}
+          name={"iPhone 15 Pro 3D Showcase"}
+          number={6}
+          link={"apple-ten-self.vercel.app"}
+        />
       </Flex>
       <Flex justify="end" align="center" gap={30}>
         <img

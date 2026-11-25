@@ -17,7 +17,7 @@ function hero() {
       <div className="heroBottomShadow"></div>
       <Gradients class0="gradient" class1="gradient1" class2="gradient2" />
       <div className="topFlex globalRL">
-        <Text className="noMP header2">👋 Hey, I&apos;m Here</Text>
+        <Text className="noMP header2">ESI-SBA · AI &amp; 3D Web Archive</Text>
         <Title className="noMP header1">ACHOURI YOUCEF ISLEM</Title>
       </div>
       <Flex className="bottomFlex globalRL" justify="space-between" align="end">

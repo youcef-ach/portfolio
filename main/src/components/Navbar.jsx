@@ -20,8 +20,8 @@ const navItems = [
     label: <a href="#projects">Projects</a>,
   },
   {
-    key: "Testimonials",
-    label: <a href="#testimonials">Testimonials</a>,
+    key: "Highlights",
+    label: <a href="#highlights">Highlights</a>,
   },
   {
     key: "Contact",
